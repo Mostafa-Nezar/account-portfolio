@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <!-- <style>
+        .parent{
+            width: 800px;
+            /* width: 1000px; */
+            margin: 30px auto;
+            background-color: red;
+        }
+        .one,.two,.three,.four{
+                         background-color: #ccc;   
+                         margin-top: 15px;
+                         margin-left: 15px;
+                         float: left;
+                         padding: 10px 0px;
+                         text-align: center;
+        }
+        .clear{
+            clear: both;
+        }
+        .one{
+            width: calc(100% - 30px);
+        }
+        .three{
+            width: calc((100% - 60px ) / 3);
+        }
+        .two{
+            width: calc((100% - 45px) / 2);
+        }
+        .four{
+            width: calc((100% - 75px) / 4);
+            margin-bottom:15px;
+        }
+
+        hr + div,.one1,.two2 {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color:#B3B3B3; 
+  color: black;
+}
+    </style> -->
+    <style>
+        body{
+            color: white;
+        }
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .port{
+            display: grid;
+            height: 100vh;
+            grid-template-columns:4% 96%;
+            grid-template-rows:repeat(2,1fr);
+            grid-template-areas:"side cont" "side cont" ;
+            
+        }
+        ul{
+            padding: 20px;
+            list-style:none;
+            display: grid;
+            justify-content: center;
+        }
+        li{
+            margin: 10px;
+            color: white;
+        }
+        .inside{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .cont{
+            background-color: #161616;
+            grid-area: cont;
+        }
+        .side{
+            grid-area: side;
+            background-color: #2E2E2E;
+            border: solid white;
+
+        }
+        ul li div{
+            margin: 30px;
+        }    
+        @media (max-width:767px){
+            .port{grid-template-columns:10% 90%;}
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="one">full width</div>
+        <div class="three">3</div>
+        <div class="three">3</div>
+        <div class="three">3</div>
+        <div class="two">2</div>
+        <div class="two">2</div>
+        <div class="four">4</div>
+        <div class="four">4</div>
+        <div class="four">4</div>
+        <div class="four">4</div>
+        <p class="clear"></p>
+    </div>
+<div class="normal">Normal</div>
+<div class="one1" style="opacity: 0.5;">One</div>
+<div class="two2" style="background-color: rgb(179 179 179 /0.2);">Two</div>
+<hr> -->
+<div class="port">
+    <div class="side">
+        <ul>
+            <li class="inside">
+            <div><i class="fa-solid fa-house" style="height: 25px;"></i></i></div>
+            <div><i class="fa-solid fa-magnifying-glass" style="height: 25px;"></i></i></div>
+            <div><i class="fa-solid fa-cart-shopping" style="height: 25px;"></i></i></div>
+            </li>
+            <li class="inside">
+            <div><i class="fa-regular fa-square-plus" style="height: 25px;"></i></div>
+            <div><i class="fa-solid fa-heart" style="height: 25px;"></i></i></div>
+            </li>
+            <li class="inside">
+                <div><i class="fa-solid fa-gear" style="height: 25px;"></i></div>
+                <div><i class="fa-solid fa-circle-user" style="height: 25px;"></i></i></div>
+                </li>
+        </ul>
+    </div>
+    <div class="cont">
+        <h2 style="padding: 20px; ">Account Setting</h2>
+        <div class="por" style="padding: 20px; position: relative; width: 600px;"><img class="img" style="border-radius: 50%;" src="WhatsApp Image 2023-10-19 at 00.10.02_f78258262.jpg" width="85px" height="85px" alt=""><i class="fa-solid fa-pen" style="position: absolute; top:20%; left:15%; color: #9F9F9F; background-color: #050405; border-radius: 50%; height: 10px; padding: 5px;"></i>
+        <span>username</span>
+        </div>
+    </div>
+</div>
+
+<img src="WhatsApp Image 2023-12-14 at 16.00.30_78b04c6e.jpg" alt="">
+
+
+
+    <script src="fontawesome-free-6.4.2-web/js/all.min.js"></script>
+</body>
+</html>
